@@ -7,6 +7,7 @@ public class Pizza {
     private int cost;
 
     public Pizza() {
+
     }
 
     public Pizza(String name, int cost) {
