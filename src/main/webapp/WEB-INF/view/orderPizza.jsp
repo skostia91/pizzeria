@@ -16,6 +16,9 @@
 
     <input type="submit" value="Ok">
 </form:form>
+<br>
+<a href="/pizzeriaShilov/menu">See menu</a>
+
 
 
 </body>

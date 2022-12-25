@@ -45,6 +45,10 @@ public class Order {
         this.orderList = orderList;
     }
 
+    public int getSumOnePizzaOrder() {
+        return pizza.getCost() * getNumbers();
+    }
+
     public int getSum() {
         String[] strings = pizza.getName().split(";");
         int cost = Integer.parseInt(strings[1]);

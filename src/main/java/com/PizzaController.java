@@ -31,6 +31,16 @@ public class PizzaController {
         return "orderPizza";
     }
 
+    @RequestMapping("menu")
+    public String seeMenu(@ModelAttribute("key2") Pizza pizza,
+                          Model model) {
+        Pizza pizza1 = new Pizza();
+        List<Pizza> list = new ArrayList(pizza1.getPizzaList().keySet());
+        System.out.println("menu controller " + list);
+        model.addAttribute("value", list);
+        return "menu";
+    }
+
     @RequestMapping("order2")
     public String endServlet(@Valid @RequestParam("numbers") int numbers,
                              @ModelAttribute("key2") Pizza pizza,

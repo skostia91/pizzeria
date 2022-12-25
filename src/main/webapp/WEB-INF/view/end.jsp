@@ -12,11 +12,12 @@
     <br>
 <c:forEach var="user" items="${value}">
     Name: ${user.pizza.name}. Cost: ${user.pizza.cost} byn. Numbers: ${user.numbers} pizzas.
+    Cost "${user.pizza.name}" = ${user.sumOnePizzaOrder}
     <br>
 </c:forEach>
 
 <br>
-Pizza: ${key2.name} ${numbers}   Cost: ${cost}
+Last added pizza: ${key2.name} ${numbers}   Cost: ${cost}
     <br>
 
 All cost you order: ${allCost} byn
@@ -29,6 +30,8 @@ Thanks.
 
 <br>
 <a href="/pizzeriaShilov/order">Add pizza</a>
+    <br>
+    <a href="/pizzeriaShilov/exit">Exit</a>
 
 </body>
 </html>
